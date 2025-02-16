@@ -7,7 +7,7 @@ classifier = joblib.load('knn_model.joblib')
 scaler = joblib.load('scaler.joblib')
 
 # Define the prediction function
-def predict_diabetes(d):
+def predict_Diabetes(d):
     sample_data = pd.DataFrame([d])
     scaled_data = scaler.transform(sample_data)
     pred = classifier.predict(scaled_data)[0]
