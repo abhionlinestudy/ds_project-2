@@ -47,7 +47,7 @@ if st.button("Predict"):
 
         if pred == 1:
             # Diabetes
-            st.Error(f"Prediction: Diabetes with probability {prob:.2f}")
+            st.error(f"Prediction: Diabetes with probability {prob:.2f}")
         else:
             # No Diabetes
-            st.Success(f"Prediction: No Diabetes {prob:.2f}")
+            st.success(f"Prediction: No Diabetes {prob:.2f}")
